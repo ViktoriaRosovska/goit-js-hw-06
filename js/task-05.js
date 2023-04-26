@@ -3,7 +3,7 @@ const titleNameEl = document.querySelector('#name-output');
 
 inputInsertEl.addEventListener('input', (event) => {
     titleNameEl.textContent = event.currentTarget.value;
-    if (inputInsertEl.value === '') {
+    if (event.currentTarget.value === '') {
     titleNameEl.textContent = 'Anonymous';
 }
 });
