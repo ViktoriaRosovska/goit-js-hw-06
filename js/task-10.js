@@ -20,7 +20,6 @@ function createBoxes(container, amount) {
 }
 
 createBtn.addEventListener('click', () => {
-  console.log('button click');
   const amountBoxNumber = Number.parseInt(amountBox.value);
   createBoxes(divBoxes, amountBoxNumber);
 });
