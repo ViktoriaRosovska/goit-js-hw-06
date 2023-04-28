@@ -16,7 +16,7 @@ function createBoxes(container, amount) {
     markap += `<div style="width:${widthBox + i}px; height:${widthBox + i}px; background-color:${getRandomHexColor()};">${i / 10 + 1}</div>`;
   }
 
-  container.insertAdjacentHTML("afterbegin", markap);
+  container.insertAdjacentHTML('beforeend', markap);
 }
 
 createBtn.addEventListener('click', () => {
